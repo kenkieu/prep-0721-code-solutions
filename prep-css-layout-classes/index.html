@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      padding: 12px;
+    }
+
+    .row {
+      display: flex;
+      width: 100%;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+<body>
+<!-- Complete the HTML here -->
+<h1>Indiana Jones</h1>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <img src="images/raiders.jpg" alt="Raiders of the Lost Ark">
+      <h3>Raiders of the Lost Ark</h3>
+      <p>
+        Raiders of the Lost Ark is a 1981 American action-adventure film directed by Steven Spielberg and written by Lawrence
+        Kasdan, based on a story by George Lucas and Philip Kaufman. It stars Harrison Ford, Karen Allen, Paul Freeman, Ronald
+        Lacey, John Rhys-Davies, and Denholm Elliott.
+      </p>
+    </div>
+    <div class="column">
+      <img src="images/temple.jpg" alt="Temple of Doom">
+      <h3>Temple of Doom</h3>
+      <p>Indiana Jones and the Temple of Doom is a 1984 American action-adventure film directed by Steven Spielberg. It is the
+      second installment in the Indiana Jones franchise, a prequel to the 1981 film Raiders of the Lost Ark, featuring
+      Harrison Ford reprising his role as the title character and the second film to use THX technology after Return of the
+      Jedi.
+      </p>
+    </div>
+    <div class="column">
+      <img src="images/crusade.jpg" alt="The Last Crusade">
+      <h3>The Last Crusade</h3>
+      <p>Indiana Jones and the Last Crusade is a 1989 American action-adventure film directed by Steven Spielberg, from a story
+      co-written by executive producer George Lucas. It is the third installment in the Indiana Jones franchise and a sequel
+      to Raiders of the Lost Ark.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
